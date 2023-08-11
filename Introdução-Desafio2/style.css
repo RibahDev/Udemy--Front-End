@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    text-indent: 1vw;
+    text-align: justify;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
