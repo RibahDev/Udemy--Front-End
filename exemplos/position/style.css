@@ -1,0 +1,32 @@
+/* Static */
+
+.static {
+    position: static;
+    background-color: #391;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relative */
+
+.relative {
+    position: relative;
+    background-color: #223;
+    color:#fff;
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    top: 70px;
+}
+
+/* Absolute */
+
+.absolute {
+    position: absolute;
+    background-color: rgb(17, 60, 153);
+    width: 100px;
+    height: 100px;
+    top: 800px;
+    left: 60px;
+}
