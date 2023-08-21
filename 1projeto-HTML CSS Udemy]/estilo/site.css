@@ -1,4 +1,114 @@
-{
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Special+Elite&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2e2e2e;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 20px 50px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+}
+
+.main-title {
+    font-size: 40px;
+}
+
+.main-paragraph {
+    font-style: italic;
+}
+
+img {
+    max-width: 880px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+img:hover {
+    transform: translate(-5px, -5px);
+    transition: all 0.8s;
+    border-radius: 0px;
+}
+
+.featured-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.quotes-container {
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.301);
+
+}
+
+.quotes-container blockquote {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p {
+    font-style: italic;
+}
+
+.curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+.curiosities-container li {
+    height: 30px;
+}
+
+.img-bold {
+    text-align: center;
+    font-weight: bold;
+}
+
+.foot {
+    background-color: #161616;
+    margin: 0 auto;
+    padding: 10px ;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot p a {
+    text-decoration: none;
+    color: wheat;
 }
