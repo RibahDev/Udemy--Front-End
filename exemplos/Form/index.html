@@ -17,6 +17,69 @@
             <label for="">Idade</label>
             <input type="number" name="age">
         </div>
+        <!-- Select -->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+        <!-- Select + Selected -->
+        <div>
+            <label for="contract">Você aceita os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="não" selected>Não</option>
+            </select>
+        </div>
+        <!-- Multiplas opções -->
+        <div>
+            <label for="items">Selecione os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="milho">Milho</option>
+            </select>
+        </div>
+        <!-- Textarea -->
+        <div>
+            <label for="comment">Gostariamos de ver sua opnião sobre o site:</label>
+            <textarea name="comment"></textarea>
+        </div>
+        <!-- fieldset -->
+        <div>
+            <fieldset>
+                <legend>Preencha as informações</legend>
+                <label for="nome">Nome:</label>
+                <input type="text">
+                <label for="cpf">CPF:</label>
+                <input type="number">
+            </fieldset>
+        </div>
+        <!-- DataList -->
+        <div>
+            <label for="flavor">Escolha seu sabor:</label>
+            <input type="text" list="flavors" id="flavor">
+            <datalist id="flavors">
+                <option value="Morango"></option>
+                <option value="Açai"></option>
+                <option value="Uva"></option>
+                <option value="Manga"></option>
+            </datalist>
+        </div>
+        <!-- Senhas -->
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="password">
+        </div>
+        <!-- Reset de formulario -->
+        <div>
+            <input type="reset" value="Limpar">
+        </div>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
