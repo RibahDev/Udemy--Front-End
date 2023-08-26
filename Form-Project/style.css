@@ -38,7 +38,7 @@ textarea {
 .header {
     height: 160px;
     padding: 20px;
-    background-color: #673ab7;
+    background-color: #dc143c;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.315);
 }
 
@@ -63,14 +63,23 @@ textarea {
 }
 
 .form-header p {
-    color: #673ab7;
-    border-bottom: 2px solid #673ab7;
-    width: 100px;
+    color: #dc143c;
+    border-bottom: 2px solid #dc143c;
+    width: 70px;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
     height: 45px;
     line-height: 45px;
+    transition: 0.8s;
+}
+
+.form-header p:hover {
+    transform: translate(3px, -4px);
+    width: 110px;
+    box-shadow: -5px 10px 5px #dc143c3d;
+    transition: 0.9s;
+
 }
 
 .form-body {
@@ -111,7 +120,7 @@ textarea {
 }
 
 .btn-submit {
-    background-color: #673ab7;
+    background-color: #dc143c;
     color: #fff;
     border: 2px solid transparent;
     width: 150px;
@@ -123,6 +132,9 @@ textarea {
 
 .btn-submit:hover {
     background-color: #fff;
-    border-color: #673ab7;
-    color: #673ab7;
+    border-color: #dc143c;
+    color: #dc143c;
+    transform: translate(3px, -4px);
+    box-shadow: -5px 10px 5px #dc143c3d;
+    transition: 0.8s;
 }
