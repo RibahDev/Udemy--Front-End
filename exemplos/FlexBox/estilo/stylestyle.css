@@ -177,3 +177,15 @@ hr {
 .shorthand .different {
     flex: 3 1 400px;
 }
+/* Autoalinhamento */
+
+.auto-alignment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid red;
+}
+
+.auto-alignment .different {
+    align-self: center;
+}
