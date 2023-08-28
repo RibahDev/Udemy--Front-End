@@ -1,0 +1,107 @@
+body {
+    padding-bottom: 500px;
+}
+hr {
+    margin-bottom: 20px;
+}
+/* Flex */
+.flex {
+    display: flex;
+    background-color: #ddd;
+    padding-bottom: 20px;
+
+}
+/* Column */
+.flex-column {
+    display: flex;
+    background-color: #ccc;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+/* Quebra de linha wrap */
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+/* justify content */
+.center,
+.space-around,
+.space-between,
+.end {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
+    width: 50px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
+}
+/* align items */
+
+.align-center,
+.flex-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid #555;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box {
+    width: 50px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.stretch {
+    align-items: stretch;
+}
+.stretch .box {
+    height: auto;
+}
+
+/* gap */
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 5px;
+}
+
+.gap .box {
+    width: 32%;
+}
