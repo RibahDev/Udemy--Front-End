@@ -63,7 +63,7 @@ body {
     padding: 12px 9px;
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
-    border-radius: 3px;
+    border-radius: 4px;
     width: 268px;
     margin: 5px auto;
 }
@@ -77,6 +77,13 @@ body {
     font-size: 13px;
     padding: 0;
     font-weight: bold;
+    transition: 0.3s;
+
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #5faee2;
+    transition: 0.3s;
 }
 /* separador */
 .separator {
