@@ -12,13 +12,47 @@ body {
     background-color: #1b1b1b;
 }
 
-#navbar-inner > h2 {
-    font-family: 'Play', sans-serif;
-    color: #ffffff;
+.stars {
+    background-color: #fff;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    left: 95px;
+}
+.stars2 {
+    background-color: #fff;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 12px;
+    left: 85px;
+}
+.stars3 {
+    background-color: #fff;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+.stars4 {
+    background-color: #fff;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 11px;
+    left: 108px;
+}
+
+.fas {
+    color: #fff;
+    margin: 0
+    padding 0;
 }
 
 #ww {
-    color: #61a5a5;
+    color: #38c2c2;
 }
 
 ul {
@@ -44,10 +78,12 @@ a:hover {
 #navbar-inner {
     display: flex;
     justify-content: space-between;
+    flex:1 1 50px;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
 }
 
 #nav-links{
@@ -71,6 +107,8 @@ a:hover {
 
 .post {
     margin-bottom: 2.5rem;
+    text-indent: 1em;
+    text-align: justify;
 }
 
 .post img {
@@ -145,7 +183,7 @@ a:hover {
 }
 
 #tags-container a {
-    background-color: #1b1b1b;
+    background-color: #333333;
     color: #61a5a5;
     padding: 0.5rem 0.7rem;
     border-radius: 0.3rem;
@@ -159,7 +197,7 @@ a:hover {
 
 #footer {
     border-top: 2px solid #ddd;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
     color: #fff;
 }
