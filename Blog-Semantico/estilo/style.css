@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Georgia;
+    font-family: Arial;
+    
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+#navbar-inner > h2 {
+    font-family: 'Play', sans-serif;
+    color: #ffffff;
+}
+
+#ww {
+    color: #61a5a5;
 }
 
 ul {
@@ -11,12 +27,13 @@ ul {
 
 a {
     text-decoration: none;
-    color: #444;
+    color: #ffffff;
     transition: 0.4s;
 }
 
 a:hover {
     color: #37a1f7;
+
 }
 
 #navbar {
@@ -44,6 +61,8 @@ a:hover {
     padding: 2rem 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #333333;
+    color: #fff;
 }
 
 #posts-container {
@@ -57,6 +76,8 @@ a:hover {
 .post img {
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.301);
 }
 
 .title,
@@ -70,7 +91,85 @@ a:hover {
 }
 
 .author {
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
 }
 
+#sidebar {
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.308);
+
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {  
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+#search-bar form{
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #1b1b1b;
+    color: #61a5a5;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+    transition: 0.4s;
+}
+
+#tags-container a:hover {
+    color: #37a1f7;
+    transform: translate(2px, -2px);
+}
+
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+#footer p {
+    margin-bottom: 1rem;
+}
+/* responsive */
+@media(max-width:450px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
