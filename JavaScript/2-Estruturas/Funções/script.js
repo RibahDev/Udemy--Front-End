@@ -51,3 +51,13 @@ if(q > 5 && w > 20) {
 } else {
     console.log("Os números não são mais altos.");
 }
+
+// else if
+
+if(1 > 2) {
+    console.log("teste");
+} else if( 2 > 3) {
+    console.log("teste2");
+} else {
+    console.log("agora sim");
+}
