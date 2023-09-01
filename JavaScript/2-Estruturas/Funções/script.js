@@ -21,7 +21,7 @@ console.error("erro!");
 
 // Mensagem de aviso
 console.warn("Aviso!")
-*/
+
 
 // if
 const m = 10;
@@ -60,4 +60,33 @@ if(1 > 2) {
     console.log("teste2");
 } else {
     console.log("agora sim");
+}
+
+
+// Repetições
+let p = 0;
+
+while(p < 10) {
+    console.log(`o valor de p é ${p}`);
+    p++;
+}
+
+// do while
+let o = 10;
+
+do {
+    console.log(`Valor de o: ${o}`);
+    o--;
+} while (o > 1);
+*/
+
+// for
+for (let t = 0; t < 10; t++) {
+    console.log("repetindo algo...")
+}
+
+let r = 10;
+
+for (r; r > 0; r--) {
+console.log(`repetindo...`)
 }
