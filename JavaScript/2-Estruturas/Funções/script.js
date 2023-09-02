@@ -1,4 +1,4 @@
-/*// Prompt / Alert
+// Prompt / Alert
 const age = prompt("Digite sua idade");
 alert(`Sua idade: ${age}`);
 
@@ -78,7 +78,7 @@ do {
     console.log(`Valor de o: ${o}`);
     o--;
 } while (o > 1);
-*/
+
 
 // for
 for (let t = 0; t < 10; t++) {
