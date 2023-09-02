@@ -90,3 +90,49 @@ let r = 10;
 for (r; r > 0; r--) {
 console.log(`repetindo...`)
 }
+
+
+// Break
+for (let g = 20; g > 10; g--) {
+    console.log(`O valor de g é: ${g}`);
+    if(g === 12) {
+        console.log("o g é 12!");
+        break;
+    }
+}
+
+for (let bre = 30; bre > 10; bre--) {
+    console.log(`O valor de bre é:${bre}`);
+    if(bre === 15) {
+    console.log(`bre é: ${bre}`);
+    break;
+    }
+}
+
+
+for (let pula = 5; pula < 15; pula++) {
+    if(pula % 2 === 0) {
+        console.log(`Número par`);
+        continue;
+    }
+    console.log(pula)
+}
+
+
+// switch
+const job = prompt("Sua profissão:");
+
+switch(job) {
+    case "programador":
+        alert("Você é Programador");
+        break;
+    case "advogado":
+            alert("Você é advogado");
+            break;
+    case "pedreiro":
+        alert("Voce é pedreiro");
+        break;
+// caso nao ache a resposta
+    default:
+        alert("Profissão não identificada");
+}
