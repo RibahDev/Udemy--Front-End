@@ -1,4 +1,4 @@
-/*// Criando uma Função
+// Criando uma Função
 function minhaFuncao() {
     console.log("Testando");
 }
@@ -172,7 +172,6 @@ const cadastroItem = (nameItem, ok = "Item Cadastrado") => {
 console.log(cadastroItem("Furadeira"));
 console.log(cadastroItem("Martelo"));
 
-*/
 
 // Closure
 
