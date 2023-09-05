@@ -105,3 +105,33 @@ console.log(array);
 array.push("z", "x", "y");
 
 console.log(array);
+
+// Shift e Unshift
+const letters = ["a", "b", "c"];
+
+const letter = letters.shift();
+
+console.log(letters);
+console.log(letter);
+
+letters.unshift("p", "q", "r");
+
+letters.unshift("z");
+
+console.log(letters);
+
+// indexOf e lastIndexOf
+
+const myElements = ["Morango", "Maçã", "Abacate", "Pêra", "Abacate"];
+
+console.log(myElements.indexOf("Maçã"));
+console.log(myElements.indexOf("Abacate"));
+
+console.log(myElements[2]);
+console.log(myElements[myElements.indexOf("Abacate")]);
+
+console.log(myElements.lastIndexOf("Abacate"));
+
+// valor = -1 para elementos não encontrados
+console.log(myElements.indexOf("Xuxu"))
+
