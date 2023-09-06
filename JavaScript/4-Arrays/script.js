@@ -1,4 +1,4 @@
-/*// Arrays
+// Arrays
 const list = [1, 2, 3, 4, 5];
 console.log(list);
 console.log(typeof list);
@@ -189,7 +189,7 @@ if (brands.includes("BMW")) {
 }else {
     console.log("Em falta")
 }
-*/
+
 
 // reverse
 const reverseTeste = [1, 2, 3, 4, 5];
