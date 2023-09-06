@@ -1,4 +1,4 @@
-// Arrays
+/*// Arrays
 const list = [1, 2, 3, 4, 5];
 console.log(list);
 console.log(typeof list);
@@ -135,3 +135,65 @@ console.log(myElements.lastIndexOf("Abacate"));
 // valor = -1 para elementos não encontrados
 console.log(myElements.indexOf("Xuxu"))
 
+
+// slice
+const testeSlice = ["a", "b", "c", "d", "e", "f"];
+
+const subArray = testeSlice.slice(2, 4);
+
+console.log(subArray);
+
+console.log(testeSlice);
+// Para exibir o valor indicado pelo indice. Ou ele pulará o ultimo
+const subArray2 = testeSlice.slice(2, 4 + 1);
+
+console.log(subArray2);
+// No caso de um índice desconhecido
+const subArray3 = testeSlice.slice(10, 20);
+
+console.log(subArray3);
+
+// apenas com o indice incial
+const subArray4 = testeSlice.slice(2);
+
+console.log(subArray4);
+
+
+// forEach
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+    console.log(`o número é ${numero}`);
+});
+
+// exemplo do dia a dia
+const posts = [
+    {title: "Primeiro post", category: "PHP"},
+    {title: "Segundo post", category:"JavaScript"},
+    {title: "Terceiro post", category:"Python"},
+];
+
+posts.forEach((post) => {
+    console.log(`Exibindo post: ${post.title} da categoria: ${post.category}`);
+})
+
+// includes
+
+const brands = ["BMW", "VW", "Fiat"];
+
+console.log(brands.includes("Fiat"));
+
+if (brands.includes("BMW")) {
+    console.log("Há carros disponiveis de BMW");
+}else {
+    console.log("Em falta")
+}
+*/
+
+// reverse
+const reverseTeste = [1, 2, 3, 4, 5];
+
+reverseTeste.reverse();
+
+console.log(reverseTeste);
