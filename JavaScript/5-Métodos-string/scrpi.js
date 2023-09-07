@@ -81,3 +81,16 @@ console.log(firstName)
 console.log(primeiroNome);
 
 // Destructuring em arrays
+const myList = ["Avião", "Submarino", "Carro"];
+
+const [veiculoA, veiculoB, veiculoC] = myList;
+
+console.log(veiculoA, veiculoB, veiculoC);
+
+// Json arrays
+const myJson = '{"name": "João", "age": 31, "skills": ["PHP", "JavaScript", "Python"]}';
+console.log(myJson);
+
+console.log(typeof myJson);
+
+// Json objetos
