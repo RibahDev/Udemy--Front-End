@@ -94,3 +94,18 @@ console.log(myJson);
 console.log(typeof myJson);
 
 // Json objetos
+const myObject = JSON.parse(myJson);
+
+console.log(myObject);
+console.log(myObject.name);
+
+// Adicionando uma string
+
+myObject.isOpenToWork = true;
+
+console.log(myObject);
+// Convertendo para json novamente (p/ apis)
+const myNewJson = JSON.stringify(myObject);
+
+console.log(myNewJson);
+console.log(typeof myNewJson);
