@@ -158,3 +158,66 @@ console.log(joao.idade);
 
 console.log(Humano.prototype.idade);
 
+// symbol
+class Aviao {
+    constructor(marca, turbinas) {
+        this.marca = marca;
+        this.turbinas = turbinas;
+    }
+}
+
+const asas = Symbol();
+const pilotos = Symbol(); 
+Aviao.prototype[asas] = 2;
+Aviao.prototype[pilotos] = 3;
+const boeing = new Aviao("Boeing", 10);
+console.log(boeing);
+
+console.log(boeing[asas]);
+
+console.log(boeing[pilotos]);
+
+// getter e setter
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.tags = tags;
+    }
+
+    get exibirTitulo() {
+        return `Você está lendo ${this.titulo}`;
+    }
+
+    set adicionarTags(tags) {
+        const tagsArray = tags.split(", ");
+        this.tags = tagsArray;
+    }
+}
+
+const myPost = new Post("Algum post", "É um post sobre programação");
+
+console.log(myPost);
+
+console.log(myPost.exibirTitulo);
+
+myPost.adicionarTags = "Programação, JavaScript, JS";
+
+console.log(myPost);
+
+// Herança
+class Mamifero {
+    constructor(patas) {
+        this.patas = patas;
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas, nome) {
+        super(patas, patas);
+        this.nome = nome;
+    }
+}
+
+const shark = new Lobo(4, "Shark");
+console.log(shark);
