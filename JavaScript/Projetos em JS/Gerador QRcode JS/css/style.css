@@ -8,13 +8,18 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #34db7a;
+height: 100vh;
+background-color: #34db7a;
 }
 
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34db7a;
+
+}
 .container {
     background-color: #fff;
     height: 260px;
@@ -87,4 +92,20 @@ body {
 
 .container.active #qr-code {
     opacity: 1;
+}
+
+.perfil {
+    flex-wrap: wrap;
+}
+
+.perfil h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #34db7a;
+    padding: 10px;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: #e7ffe7
 }
