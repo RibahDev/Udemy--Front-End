@@ -6,6 +6,8 @@
     <title>Calculadora de IMC JS</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
     <div class="container">
@@ -15,10 +17,10 @@
                 <div class="form-inputs">
                     <div class="form-control">
                         <label for="height">Altura:</label>
-                        <input type="text" name="height" id="height" placeholder="Ex: 1,75">
+                        <input type="text" name="height" id="height" placeholder="Ex: 1,75" required>
                     </div>
                     <div class="form-control">
-                        <label for="weight">Altura:</label>
+                        <label for="weight">Peso:</label>
                         <input type="text" name="weight" id="weight" placeholder="Ex: 80,5">
                     </div>
                 </div>
@@ -29,8 +31,8 @@
             </form>
         </div>
         <div id="result-container" class="hide">
-            <p id="imc-number">Seu IMC: <span ></span></p>
-            <p id="imc-info">Situação atual: <span ></span></p>
+            <p id="imc-number">Seu IMC: <span></span></p>
+            <p id="imc-info">Situação atual: <span></span></p>
             <h3>Confira as classificações</h3>
             <div id="imc-table">
                 <div class="table-header">
@@ -38,7 +40,6 @@
                     <h4>Classificação</h4>
                     <h4>Obesidade</h4>
                 </div>
-                
             </div>
             <button id="back-btn">Voltar</button>
         </div>
