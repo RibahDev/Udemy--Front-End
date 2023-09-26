@@ -19,8 +19,8 @@ body {
 
 button {
     background-color: #fdfdfd;
-    color: #102f5e;
-    border: 2px solid #102f5e;
+    color: #3ecf93;
+    border: 2px solid #1ac994;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -28,11 +28,14 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
 }
 
 button:hover {
-    background-color: #102f5e;
+    background-color: #3ecf93;
     color: #fff;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.205); 
 }
 
 button:hover > i {
@@ -40,7 +43,7 @@ button:hover > i {
 }   
 
 button i  {
-    color: #102f5e;
+    color: #3ecf93;
     font-weight: bold;
     pointer-events: none;
 }
@@ -60,7 +63,7 @@ input, select {
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
 }
 
 .todo-container header {
@@ -152,7 +155,7 @@ input, select {
 }
 
 .done {
-    background-color: #395169;
+    background-color: #04c5abee;
 }
 
 .done h3 {
