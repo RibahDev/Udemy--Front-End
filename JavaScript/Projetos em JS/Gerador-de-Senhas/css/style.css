@@ -14,7 +14,7 @@ html, body {
 }
 
 html {
-    background: linear-gradient(190deg, #dddee0 60%, #d8ccbe 40%);
+    background: linear-gradient(190deg, #dddee0 60%, #c1d7e6 40%);
 }
 
 input:focus {
@@ -22,7 +22,7 @@ input:focus {
 }
 
 #register-container {
-    background: linear-gradient(190deg, #fdfdfd 65%, #d8ccbe 45%);
+    background: linear-gradient(190deg, #fdfdfd 65%, #c1d7e6 45%);
     max-width: 900px;
     min-height: 80vh;
     margin: 2rem auto;
@@ -31,14 +31,14 @@ input:focus {
 }
 
 #register-banner {
-    background: url(../img/pexels-rodion-kutsaiev-7911758.jpg);
+    background: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     width: 50%;
 }
 
 #banner-layer {
-    background-color: #5e3e1885;
+    background-color: #7d98a96b;
     height: 100%;
     padding: 2rem;
     display: flex;
@@ -118,7 +118,7 @@ input:focus {
 }
 
 #register-form input[type="submit"] {
-    background-color: #5e3e1885;
+    background-color: #56b1eb;
     color: #fff;
     opacity: .8;
     border: none;
