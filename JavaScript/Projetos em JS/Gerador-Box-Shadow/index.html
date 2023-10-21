@@ -13,10 +13,59 @@
             <h2>configurações Box shadow:</h2>
             <div class="form-control">
                 <div class="range-input">
-                    
+                    <label for="horizontal">Deslocamento horizontal:</label>
+                    <input type="range" id="horizontal" name="horizontal" min="-100" max="100" value="5">
+                </div>
+                <div class="refence-input">
+                    <input type="text" id="horizontal-value" name="horizontal-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="vertical">Deslocamento vertical:</label>
+                    <input type="range" id="vertical" name="vertical" min="-100" max="100" value="5">
+                </div>
+                <div class="refence-input">
+                    <input type="text" id="vertical" name="vertical">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="blur">Intensidade do borrão (Blur):</label>
+                    <input type="range" id="blur" name="blur" min="0" max="100" value="10">
+                </div>
+                <div class="refence-input">
+                    <input type="text" id="blur-value" name="blur-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="spread">Intensidade do Espalhamento (Spread):</label>
+                    <input type="range" id="spread" name="spread" min="-100" max="100" value="3">
+                </div>
+                <div class="refence-input">
+                    <input type="text" id="spread-value" name="spread-value">
+                    <p>px</p>
                 </div>
             </div>
         </div>
+        <div id="preview">
+            <h2>Preview do efeito gerado:</h2>
+            <div id="box"></div>
+        </div>
     </div>
+    <div id="generated-rule">
+        <h2>Copie e cole no seu arquivo de CSS:</h2>
+        <div id="rules-area">
+            <div id="rules-area">
+                <p id="rule">box-shadows <span></span></p>
+                <p id="webkit-rule">-webkit-box-shadows <span></span></p>
+                <p id="moz-rule">-moz-box-shadows <span></span></p>
+            </div>
+        </div>
+        </div>
 </body>
 </html>
