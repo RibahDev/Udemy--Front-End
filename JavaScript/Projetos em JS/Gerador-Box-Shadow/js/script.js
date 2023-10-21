@@ -1,6 +1,6 @@
 class BoxShadowGenerator {
 
-    constructor(horizontal, horizontalRef, vertical, verticalRef, blur, blurRef, spread, spreadRef, rule, webkitRule, mozRule) {
+    constructor(horizontal, horizontalRef, vertical, verticalRef, blur, blurRef, spread, spreadRef, previewBox, rule, webkitRule, mozRule) {
         
     this.horizontal = horizontal;
     this.horizontalRef = horizontalRef;
@@ -10,10 +10,39 @@ class BoxShadowGenerator {
     this.blurRef = blurRef;
     this.spread = spread;
     this.spreadRef = spreadRef;
+    this.previewBox = previewBox;
     this.rule = rule;
     this.webkitRule = webkitRule;
-    this.mozRule = mozRuleq;
+    this.mozRule = mozRule;
 
+    }
+
+    initialize() {
+        this.horizontalRef.value = this.horizontal.value;
+        this.verticalRef.value = this.vertical.value;
+        this.blurRef.value = this.blur.value;
+        this.spreadRef.value = this.spread.value;
+
+        this.applyRule();
+        this.showRule();
+    }
+
+    applyRule() {
+
+        this.previewBox.style.boxShadow = `${this.horizontalRef.value}px ${this.verticalRef.value}px ${this.blurRef.value}px ${this.spreadRef.value}px #000000`;
+        this.currentRule = this.previewBox.style.boxShadow;
+    }
+
+    showRule() {
+        this.rule.innerText = this.currentRule;
+        this.webkitRule.innerText = this.currentRule;
+        this.mozRule.innerText = this.currentRule;
+    }
+
+    updateValue(type, value) {
+        switch() {
+            
+        }
     }
 }
 
@@ -32,4 +61,14 @@ const previewBox = document.querySelector("#box");
 const rule = document.querySelector("#rule span");
 const webkitRule = document.querySelector("#webkit-rule span");
 const mozRule = document.querySelector("#moz-rule span");
+
+const boxShadow = new BoxShadowGenerator(horizontal, horizontalRef, vertical, verticalRef, blur, blurRef, spread, spreadRef,previewBox, rule, webkitRule, mozRule);
+
+boxShadow.initialize();
 // Eventos
+
+horizontal.addEventListener("input", (e) => {
+    const value = e.target.value;
+
+    boxShadow.updateValue();
+});
