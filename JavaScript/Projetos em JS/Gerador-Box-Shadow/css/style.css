@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-body {
-    padding-bottom: 500px;
-}
-
 h2{
     margin-bottom: 1.6rem;
     text-align: center;
@@ -43,6 +39,7 @@ h2{
 .range-input {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .range-input input[type="range"] {
@@ -78,7 +75,16 @@ h2{
     margin-left: 1rem;
     text-align: center;
 }
+/* Novas Funcionalidades */
+#color-value {
+    min-width: 100px;
+}
 
+#inset {
+    align-self: start;
+    height: 20px;
+    width: 20px;
+}
 /* Preview */
 #box {
     width: 100%;
@@ -92,7 +98,7 @@ h2{
 }
 
 #generated-rule p {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 #rules-area {
@@ -101,4 +107,38 @@ h2{
     margin: 0 auto;
     border: 2px solid #14aae6;
     padding: 1rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#rules-area:hover {
+    background-color: #fdfdfd;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media(max-width: 425px) {
+
+    #box-shadow-generator {
+        flex-direction: column;
+    }
+
+    #container-container,
+    #preview {
+        padding: 1rem 2rem;
+    }
+
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #generated-rule {
+        margin-top: 2rem;
+    }
 }
