@@ -2,6 +2,8 @@ import './App.css'
 
  {/*2- Imagem em assets */}
  import night from './assets/night.jpg'
+
+// 3- useState
 function App() {
 
   return (
