@@ -6,6 +6,9 @@ import './App.css'
 // 3- useState
 import Data from './components/Data';
 
+// 4- Renderização de lista
+import ListRender from './components/ListRender';
+
 function App() {
   return (
       <div className='App' style={{paddingBottom: '500px'}}>
@@ -16,6 +19,8 @@ function App() {
         <img src={night} alt="Outrra imagem" />
         {/* 3 - useState */}
         <Data />
+        {/* 4 - Render de lista */}
+        <ListRender />
       </div>
   )
 }
