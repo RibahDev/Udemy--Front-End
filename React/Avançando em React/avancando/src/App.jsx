@@ -4,15 +4,18 @@ import './App.css'
  import night from './assets/night.jpg'
 
 // 3- useState
-function App() {
+import Data from './components/Data';
 
+function App() {
   return (
-      <div>
+      <div className='App' style={{paddingBottom: '500px'}}>
         <h1>Avançando em React</h1>
         {/*1- Imagem em public */}
         <img src="/img.jpg" alt="Alguma imagem" />
-        {/* Imagem em assets */}
+        {/*2 - Imagem em assets */}
         <img src={night} alt="Outrra imagem" />
+        {/* 3 - useState */}
+        <Data />
       </div>
   )
 }
