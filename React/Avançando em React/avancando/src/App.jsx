@@ -25,6 +25,9 @@ const cars = [
   { id: 3, brand: "Renault", color: "Azul", km: 32000},
 ];
 
+// 12 - Fragmentos
+import Fragment from './components/Fragment';
+
 function App() {
   return (
       <div className='App' style={{paddingBottom: '500px'}}>
@@ -50,6 +53,8 @@ function App() {
         {cars.map((car) =>
           <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km}/>
         )}
+        {/* 12- Fragmentos */}
+        <Fragment />
       </div>
   )
 }
