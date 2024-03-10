@@ -28,6 +28,9 @@ const cars = [
 // 12 - Fragmentos
 import Fragment from './components/Fragment';
 
+// 13 - Children
+import Container from './components/Container';
+
 function App() {
   return (
       <div className='App' style={{paddingBottom: '500px'}}>
@@ -50,11 +53,20 @@ function App() {
         <CarDetails brand="Fiat" km={200000} color="Red" />
         <CarDetails brand="Hyundai" km={0} color="blue" />
         {/* 11 - Renderização de listas de componentes */}
-        {cars.map((car) =>
-          <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km}/>
-        )}
+        {cars.map((car) =>(
+          <CarDetails
+            key={car.id}
+            brand={car.brand}
+            color={car.color}
+            km={car.km}
+          />
+          ))}
         {/* 12- Fragmentos */}
         <Fragment />
+        {/* 13- Container */}
+        <Container>
+          <p>Alguma coisa</p>
+        </Container>
       </div>
   )
 }
