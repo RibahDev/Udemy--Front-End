@@ -31,7 +31,16 @@ import Fragment from './components/Fragment';
 // 13 - Children
 import Container from './components/Container';
 
+// 14 - Função em pro
+import ExecuteFunction from './components/ExecuteFunction';
+
 function App() {
+
+  // 14- função em props
+  function showMessage() {
+    console.log("Evento do componente pai")
+  }
+
   return (
       <div className='App' style={{paddingBottom: '500px'}}>
         <h1>Avançando em React</h1>
@@ -67,6 +76,8 @@ function App() {
         <Container>
           <p>Alguma coisa</p>
         </Container>
+        {/* 14 - Função em prop */}
+        <ExecuteFunction myFunction={showMessage}/>
       </div>
   )
 }
