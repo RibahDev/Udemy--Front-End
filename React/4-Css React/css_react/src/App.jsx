@@ -1,11 +1,16 @@
 import './App.css'
 
 // 2 - Css de componente
-import MyComponent from './components/MyComponent'
+import MyComponent from './components/MyComponent';
+import Title from "./components/Title";
 
 function App() {
   // 4 - Inline style dinamico
   const n = 15;
+
+  // 5 - Classes dinamicas
+  const redTitle = true;
+
   
   return (
     <div className="App">
@@ -19,7 +24,10 @@ function App() {
       {/* 4 - Inline style dinamico */}
       <h2 style={n > 11 ? {color: "purple"} : {color: "yellow"}}>Css dinamico</h2>
       <h2 style={n > 20 ? {color: "purple"} : {color: "yellow"}}>Css dinamico</h2>
-
+      {/* 5 - Classes dinamicas */}
+      <h2 className={redTitle ? "redtitle" : "title"}>Vai com calma, já deu certo!</h2>
+      {/* 6 - Css modules */}
+      <Title />
     </div>
      
   )
