@@ -7,7 +7,9 @@ const MyForm = ({ userName, userEmail}) => {
     const [name, setName] = useState(userName);
     const [email, setEmail] = useState(userEmail);
 
-    const [bio, setBio] = useState("")
+    const [bio, setBio] = useState("");
+
+    const [role, setRole] = useState("");
 
     const handleName = (e) => {
         setName(e.target.value);
@@ -17,7 +19,7 @@ const MyForm = ({ userName, userEmail}) => {
     const handleSubmit = (e) => { 
         e.preventDefault();
 
-        console.log(name, email, bio);
+        console.log(name, email, bio, role);
 
     // Validação
     // Envio
@@ -26,6 +28,7 @@ const MyForm = ({ userName, userEmail}) => {
     setName("");
     setEmail("");
     setBio("");
+    setRole("");
     }
     
     
@@ -50,6 +53,15 @@ const MyForm = ({ userName, userEmail}) => {
             <label>
                 <span>Bio:</span>
                 <textarea name="bio" placeholder="Descrição do usuário" onChange={(e) => setBio(e.target.value)} value={bio}></textarea>
+            </label>
+            {/* 9 - Select */}
+            <label>
+                <span>Função do Sistema</span>
+                <select name="role" onChange={(e) => setRole(e.target.value)} value={role}>
+                    <option value="user">Usuário</option>
+                    <option value="editor">Editor</option>
+                    <option value="admin">Admin</option>
+                </select>
             </label>
             <input type="submit" value="Enviar"/>
         </form>
