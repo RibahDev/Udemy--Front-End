@@ -14,11 +14,19 @@ const MyForm = ({ userName, userEmail}) => {
     // 5 - Envio de form
     const handleSubmit = (e) => { 
         e.preventDefault();
+
         console.log(name, email);
+        
+    // Validação
+    // Envio
+
+    // 7 - Limpando form
+    setName("");
+    setEmail("");
     }
     
-    console.log(name, email);
-
+    
+ 
   return(
      <div>
         {/*1- Criação de Form */}
