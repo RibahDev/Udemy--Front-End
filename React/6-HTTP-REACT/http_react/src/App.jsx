@@ -41,6 +41,11 @@ function App() {
       },
       body: JSON.stringify(product),
     })
+
+    const addedProduct = await res.json();
+
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+
   };
 
   return (
